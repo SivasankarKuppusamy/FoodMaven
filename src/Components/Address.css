@@ -1,0 +1,101 @@
+#address{
+    width: 23%;
+    padding: 20px;
+   height: 3%;
+   border-width: 40;
+   position:absolute;
+   left:45%;
+   top:20%;
+    border-radius:10px;
+    border-color: rgb(143, 137, 137);
+    border-style: solid;
+   ;
+   }
+   .ad{
+       position:absolute;
+       left:35%;
+       top:25%;
+   }
+   .cn
+   {
+       position: absolute;
+       top:68%;
+       left:34%;
+   }
+   #number
+   {
+   position: absolute;
+       top:67%;
+       left:45%;
+        height:5%;
+        width:22%;
+       border-color: rgb(143, 137, 137);
+       border-style: solid;
+       border-radius:10px;
+   }
+   #abc
+   {
+       position:absolute;
+       left:43%;
+       top:5%;
+   }
+   #br
+   {
+       position:absolute;
+       top:82%;
+       left:44%;
+       height:36px;
+       width:150px;
+       border-radius: 10px;
+       color:white;
+       border:none;
+       cursor:pointer;
+       background-color: rgb(13, 93, 206);
+   }
+   .ci{
+       position:absolute;
+       left:41.5%;
+       top:36%
+   }
+   #city{
+       position:absolute;
+       width:22%;
+       height:5%;
+       top:35%;
+       left:45%;
+       border-color:rgb(143, 137, 137);
+       border-style: solid;
+       border-radius:10px;
+   }
+   #state{
+       position:absolute;
+       top:46%;
+       left:45%;
+       height:5%;
+       width:22%;
+       border-color: rgb(143, 137, 137);
+       border-style: solid;
+       border-radius: 10px;
+   }
+   #pincode{
+       position:absolute;
+       top:57%;
+       left: 45%;
+       width:22%;
+       height:5%;
+       border-color:rgb(143, 137, 137);
+       border-style: solid;
+       border-radius:10px;
+   }
+   .st{
+       position:absolute;
+       top:47%;
+       left:41%;
+   }
+   .pi{
+       position:absolute;
+       top:58%;
+       left:39%;
+   }
+   
+   

@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#main{
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border: 1px solid black;
+    width: 400px;
+}
+.flex_row{
+    display:flex;
+    padding: 10px;
+    align-items:flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    margin-block: -19%;
+}
+.thumbnail{
+    padding-left: 17px;   
+}
+.clicked{
+    border:2px solid black
+}
+#description{
+    margin-block:-28%;
+    margin-left:50%;
+}
+#border{
+    margin-top: 30%;
+    margin-left: 44%;
+}
+#imgss{
+    margin-left: 2%;
+}
+#text{
+    margin-left:60%;
+}
+#des{
+    margin-top: 5%;
+    margin-left:17%;
+    font-size:150%
+}
+#buy{
+    font-size: 150%;
+    margin-left: 26%;
+    border-radius: 6px;
+    padding: 9px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#add{
+    font-size: 150%;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 6px;
+    padding: 9px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#fresh{
+    float: right;
+    margin-inline: 20%;
+    margin-top: 18%;
+    border: 1px solid black;
+}
+#buy,#add{
+    cursor:pointer;
+}
+.body1
+{
+    background-color:white;
+}
+.bodyf{
+    height:100%;
+}

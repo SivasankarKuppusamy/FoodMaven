@@ -1,0 +1,15 @@
+.home
+{
+  color:white;
+  background-color: rgb(18, 152, 18);
+  width:150px;
+  height:36px;
+  cursor:pointer;
+  border: none;
+  border-radius: 15px;
+  
+}
+#success{
+    height: 100%;
+    padding-top: 8%;
+}

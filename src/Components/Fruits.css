@@ -1,0 +1,82 @@
+.img1
+{
+    position: absolute;
+    top:11%;
+    left:25%;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+}
+
+.img2
+{
+    position: absolute;
+    top:38%;
+    left:25%;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+
+}
+#back{
+    position: absolute;
+    top:80px;
+    left:12px;
+    height:35px;
+}
+.img3
+{
+    position: absolute;
+    top:68%;
+    left:25%;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    cursor: pointer;
+}
+.img4
+{
+    position: absolute;
+    top:11%;
+    left:50%;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+}
+.img5
+{
+    position: absolute;
+    top:38%;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    left:50%;
+}
+
+.img6
+{
+    position: absolute;
+    top:69%;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    left:50%;
+
+}
+.img7
+{
+    position: absolute;
+    top:11%;
+    left:75%;
+
+}
+.img8
+{
+    position: absolute;
+    top:38%;
+    left:75%;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+
+}
+.img9
+{
+    position: absolute;
+    top:68%;
+    left:75%;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+
+}
+#orange{
+    cursor: pointer;
+}
+.body1{
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+}
