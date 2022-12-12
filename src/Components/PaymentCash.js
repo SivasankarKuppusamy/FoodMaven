@@ -1,7 +1,26 @@
 import React from 'react'
 import './Payment.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from 'react';
 function PaymentCash() {
+	const [IsChecked, setIsChecked] = useState(false);
+	const [temp,setTemp]=useState(false);
+	const navigate=useNavigate();
+	const handleChange = event => {
+	  if (event.target.checked) {
+		setTemp(true);
+	  } else {
+		alert('Checkbox is NOT Verified');
+	  }
+	  setIsChecked(current => !current);
+	};
+	const handleSubmit =() => {
+	  if (temp) {
+		navigate('/success')
+	  } else {
+		alert('Checkbox is NOT Verified');
+	  }
+	};
   return (
     <body >
     
@@ -37,10 +56,10 @@ function PaymentCash() {
 	  </div>
    
 	  <div class="input-fields">
-		<input type="checkbox" /> <p id="verify"> Click To verify</p>
+		<input type="checkbox"  onChange={handleChange}/> <p id="verify"> Click To verify</p>
 	  </div>
 	  <div class="pay-button">
-	  <Link to='/success'><input type="submit" class="btnpay" value="Proceed To Pay"/></Link>
+	  <input type="submit" class="btnpay" onClick={handleSubmit} value="Proceed To Pay"/>
 	  </div>
 	
 	 

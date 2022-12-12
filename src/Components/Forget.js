@@ -10,6 +10,7 @@ function Forget() {
   return (
     <div class="container">
     <div class="content">
+	  <Link to='/login'><img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" id="back"/></Link>
         <h1 class="card-title">Reset Password!</h1>
         <small class="card-subtitle">Enter Phone Number And Verify OTP!</small>
         <form class="card-form">

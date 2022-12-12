@@ -37,14 +37,7 @@
   top:12%;
   left:88%;
 }
-.van
-{
-  height:4%;
-  width:4%;
-  position: absolute;
-  top: 15%;
-  left:83%;
-}
+
 .menu
 {
   height:3%;
@@ -71,16 +64,16 @@
 }
 .bgg
 {
-  height:695px;
-  width:1600px;
+  height:100%;
+  width:100%;
 }
 .arrow
 {
   height:3%;
   width:2%;
   position: absolute;
-  top:23.5%;
-  left:21%;
+  top:22.5%;
+  left:19%;
 }
 .image1,.image2,.image3,.image4,.image5,.text1,.text2,.text3,.text4{
     cursor:pointer;

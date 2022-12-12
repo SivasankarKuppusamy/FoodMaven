@@ -1,15 +1,16 @@
 .img1
 {
     position: absolute;
-    top:11%;
+    top:10%;
     left:25%;
     background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+   
 }
 
 .img2
 {
     position: absolute;
-    top:38%;
+    top:37%;
     left:25%;
     background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
 
@@ -23,7 +24,7 @@
 .img3
 {
     position: absolute;
-    top:68%;
+    top:70%;
     left:25%;
     background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
     cursor: pointer;
@@ -31,7 +32,7 @@
 .img4
 {
     position: absolute;
-    top:11%;
+    top:10%;
     left:50%;
     background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
 }
@@ -46,7 +47,7 @@
 .img6
 {
     position: absolute;
-    top:69%;
+    top: 70%;
     background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
     left:50%;
 
@@ -54,14 +55,14 @@
 .img7
 {
     position: absolute;
-    top:11%;
+    top:10%;
     left:75%;
 
 }
 .img8
 {
     position: absolute;
-    top:38%;
+    top:39%;
     left:75%;
     background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
 
@@ -69,7 +70,7 @@
 .img9
 {
     position: absolute;
-    top:68%;
+    top:70%;
     left:75%;
     background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
 

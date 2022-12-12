@@ -1,8 +1,21 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
+import { Link, useNavigate } from "react-router-dom";
 import './Payment.css'
 
 function PaymentUpi() {
+	const [upiid,Setupiid]=useState("");
+	const [name,SetName]=useState("");
+	const navigate =useNavigate();
+	const handleSubmit=(event)=>{
+		if(!(name.length==0||upiid.length==0)){
+			navigate('/success')
+		}
+		else {
+			event.preventDefault();
+			alert("Enter Details")
+		}
+	}
+	
   return (
     <div>
 	<body><div class="checkout-panel">
@@ -37,15 +50,15 @@ function PaymentUpi() {
    
 	  <div class="input-fields">
 		<div class="column-1">
-		  <label for="cardholder">Enter Upi Id</label>
-		  <input type="text" id="cardholder" />
+		  <label for="cardholder" >Enter Upi Id</label>
+		  <input type="text" id="cardholder" onChange={(e)=>Setupiid(e.target.value)} />
 		</div>
 		<div class="column-2">
-		  <label for="cardnumber">Name</label>
-		  <input type="password" id="cardnumber"/></div>
+		  <label for="cardnumber" >Name</label>
+		  <input type="password" onChange={(e)=>SetName(e.target.value)} id="cardnumber"/></div>
 	  </div>
 	  <div class="pay-button">
-	  <Link to='/success'><input type="submit" class="btnpay" value="Proceed To Pay"/></Link>
+	  <Link to='/success'><input type="submit" onClick={handleSubmit} class="btnpay" value="Proceed To Pay"/></Link>
 	  </div>
 	
 	 

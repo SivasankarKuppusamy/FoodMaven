@@ -1,6 +1,7 @@
 import React from 'react'
 import './otp.css'
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function OtpVerify() {
   const navigate=useNavigate();
@@ -12,17 +13,16 @@ function OtpVerify() {
         <div class="row">
           <div class="content">
               <div class="content-head">
+	  <Link to='/signup'><img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" id="back"/></Link>
                   <h1>Please Enter OTP</h1>
               </div><br/>
         <form class="form-otp mb-4">
               <div class="form-group row">
                 <div class="input-code">
-                  <input type="text" id="otp-number-input-1" class="otp-number-input" maxlength="1"  numbers-only/>
-                  <input type="text" id="otp-number-input-2" class="otp-number-input" maxlength="1"  numbers-only/>
-                  <input type="text" id="otp-number-input-3" class="otp-number-input" maxlength="1"  numbers-only/>
-                  <input type="text" id="otp-number-input-4" class="otp-number-input" maxlength="1" numbers-only/>
-                  <input type="text" id="otp-number-input-5" class="otp-number-input" tabindex="5" maxlength="1" numbers-only/>
-                  <input type="text" id="otp-number-input-6" class="otp-number-input" maxlength="1"  numbers-only/>
+                 <input type="text" maxlength="1"></input>
+                 <input type="text" maxlength="1"></input>
+                 <input type="text" maxlength="1"></input>
+                 <input type="text" maxlength="1"></input>
                 </div>
               </div>
             </form>

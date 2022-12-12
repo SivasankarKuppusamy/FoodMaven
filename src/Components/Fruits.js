@@ -21,7 +21,7 @@ export default function Contact() {
       width: 200,
       height: 170,
       paddingLeft:'3%',
-      paddingTop:'2%'
+      paddingTop:'1%'
       
     }}>
     <img src='https://images.everydayhealth.com/images/apples-101-about-1440x810.jpg'alt="Loading..." style={{width:'90%',paddingLeft:'5%'}}/>
@@ -34,7 +34,7 @@ export default function Contact() {
         width: 200,
         height: 190,
         paddingLeft:'3%',
-        paddingTop:'0%',
+        paddingTop:'3%',
         
       }}>
     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJ5bIp5L8-U3J_9TtS9iHhbvkDuY7gSyzZg&usqp=CAU' alt="Loading..." style={{width:'90%',paddingTop:'5%',paddingLeft:'5%'}}/>
@@ -48,7 +48,7 @@ export default function Contact() {
         width: 200,
         height: 190,
         paddingLeft:'3%',
-        paddingTop:'0%',
+        paddingTop:'5%',
       
       }}>
     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuLxDGERdJohZnNxxIoPJUgxPbYkIpjqq5A&usqp=CAU' alt="Loading..." style={{width:'90%',height:'60%',paddingTop:'10%',paddingLeft:'5%'}}/>
@@ -62,7 +62,7 @@ export default function Contact() {
         width: 200,
         height: 200,
         paddingLeft:'3%',
-      
+        paddingTop:'0%',
        
       }}>
     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8e58O4acIB6mmlLLog96aAhqHZ2wf2t_Sw&usqp=CAU' alt='Loading...' style={{width:'90%',paddingTop:'12%',paddingLeft:'5%'}}/>
@@ -89,8 +89,7 @@ export default function Contact() {
         width: 200,
         height: 200,
         paddingLeft:'3%',
-       
-      }}>
+     }}>
     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSzj0day1Ff6V2R82IjMQ-tl5tErG6ep6ffcic5EYoGfZnOUkIKFzMt71fuw86TLkYwgw&usqp=CAU' alt='Loading...' style={{width:'90%',height:'60%', paddingTop:'10%',paddingLeft:'5%'}}/>
     <Typography variant='h6' paddingLeft='5%' align='center'>
     Water Melon<br/>
@@ -170,6 +169,9 @@ export default function Contact() {
     Custard Apple<br/>
     Price:250(Per Kg)
     </Typography>
-    </Box></div>
-  )
+    </Box>
+    <br/><br></br>
+    <br/><br></br>
+    </div>
+    )
 }

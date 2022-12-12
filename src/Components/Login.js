@@ -30,6 +30,8 @@ function Login() {
     <div class="containe">
   <div class="content">
         <h1 class="Title">Welcome!</h1>
+	  <Link to='/'><img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" id="back"/></Link>
+
         <small class="card-subtitle">Enter your credentials</small>
         <form class="card-form" onSubmit={formHandler} >
             <label for="username">Phone/Email</label>

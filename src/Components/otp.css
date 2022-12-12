@@ -3,6 +3,7 @@
   display: grid;
   font-family: "poppins", Arial, Helvetica, sans-serif;
   place-items: center;
+  margin-top: 2%;
    }
   
    .top-head {
@@ -25,7 +26,7 @@
  .content-head h1{
      font-size: 20px;
      padding-top: 15px;
-     padding-bottom: 15px;
+    
  }
  
 
@@ -37,18 +38,6 @@
     justify-content: space-around;
     align-content: space-between;
   }
-  
-  .content .otp-number-input 
-  {
-    text-align: center;
-    line-height: 8px;
-    font-size: 30px;
-    width: 10%;   
-    border-radius: 7px;
-    border: 2px solid #4FBEC6;
-    margin-bottom: 50px;
-  }
-
   input {
     border: 2px solid #4FBEC6;
     border-radius: 7px;
