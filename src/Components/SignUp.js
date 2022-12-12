@@ -9,25 +9,31 @@ function SignUp() {
     const [pwd,setPwd]=useState("");
     const [cpwd,setCpwd]=useState("");
    let handleSubmit=(event)=>{
+    
     if(name.length==0){
+        event.preventDefault();
         alert("Enter name")
     }
     else if(num.length==0){
+        event.preventDefault();
         alert("Enter Mobile Number")
     }
     else if(pwd.length==0){
+        event.preventDefault();
         alert("Enter Password")
     }
     else if(pwd.length<=8){
+        event.preventDefault();
         alert("Password Must be Greater than or Equals to 8")
     }
     else if(cpwd.length==0){
+        event.preventDefault();
         alert("Enter Confirm Password")
     }
     else if(pwd!=cpwd){
+        event.preventDefault();
         alert("Two passwords Must be Same!!")
     }
-
     else{
     navigate("/otp")
     }
@@ -45,7 +51,7 @@ function SignUp() {
             </div>
             <label for="password">Mobile Number</label>
             <div class="card-input-container password">
-                <input type="tel" pattern="[0-9]{3}" placeholder="Enter your Mobile Number" id="password" onChange={(e)=>{setNum(e.target.value)}} />
+                <input type="tel" pattern="[0-9]{3}" placeholder="Enter your Mobile Number" id="password" maxlength="10" onChange={(e)=>{setNum(e.target.value)}} />
             </div>
             <label for="password">Email</label>
             <div class="card-input-container password">
