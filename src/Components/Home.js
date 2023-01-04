@@ -1,13 +1,20 @@
 import React from 'react'
 import './Home.css'
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const navigate=useNavigate();
   let navf=()=>{
     navigate('/fruits')
   }
+  let navv=()=>{
+    navigate('/veg')
+  }
   
+  let navb=()=>{
+    navigate('/bev')
+  }
 
   return (
     <div id="body">
@@ -20,14 +27,14 @@ export default function Home() {
     <img className='arrow' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdruJOXATHW-O0LOA2-t_KcSOjjeAasJBcburzyooCuDDSm7gw6R_AjCKqyJc_Kr6S6qk&usqp=CAU" alt='drop'></img>
     <h3 className='text1' onClick={navf}>Fresh Fruits</h3>
     <img className='image1' onClick={navf} src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2020/08/best-fruits-1197259281-770x533-1-650x428.jpg" alt='Fruits'></img>
-    <h3 className='text2'>Vegetables</h3>
-    <img className='image2' src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6" alt='vegetables'></img>
-    <h3 className='text3'>Fish & Meat</h3>
-    <img className='image3' src="https://d12eu00glpdtk2.cloudfront.net/public/images/local/_760x500_clip_center-center_none/shutterstock_472568125-1.jpg" alt='Fish & Meat'></img>
-    <h3 className='text4'>Beverages</h3>
-    <img className='image4' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItkQiswZSaxEqKSvn6VTeHH7YzyKM4p4uhQ&usqp=CAU" alt='Beverages'></img>
-    <h3 className='text5'>Groceries</h3>
-    <img className='image5' src="https://i.insider.com/5e7ca73e14f18f4a4773db70?width=750&format=jpeg&auto=webp" alt='Groceries'></img>
+    <h3 className='text2' onClick={navv}>Vegetables</h3>
+    <img className='image2' onClick={navv} src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6" alt='vegetables'></img>
+    <Link to='/meat'><h3 className='text3'>Fish & Meat</h3>
+    <img className='image3' src="https://d12eu00glpdtk2.cloudfront.net/public/images/local/_760x500_clip_center-center_none/shutterstock_472568125-1.jpg" alt='Fish & Meat'></img></Link>
+    <h3 className='text4' onClick={navb}>Beverages</h3>
+    <img className='image4' onClick={navb} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItkQiswZSaxEqKSvn6VTeHH7YzyKM4p4uhQ&usqp=CAU" alt='Beverages'></img>
+   <Link to='/gro'> <h3 className='text5'>Groceries</h3>
+    <img className='image5' src="https://i.insider.com/5e7ca73e14f18f4a4773db70?width=750&format=jpeg&auto=webp" alt='Groceries'></img></Link>
     </div>
     <div id="About">
     <h2 id="aboutus">AboutUs</h2><br/>

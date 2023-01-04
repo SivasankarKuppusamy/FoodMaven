@@ -1,8 +1,23 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import './Address.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 export default function Address() {
+  const [pin,setPin]=useState("");
+  const [ph,setph]=useState("");
+  const nav=useNavigate();
+  const val=()=>{
+    if(pin.length!=6){
+    alert("Enter 6 digit Pincode");
+     }
+    if(ph.length==0){
+    alert("Enter Phone Number");
+     }
+      else
+    {
+      nav("/payment");
+    }
+  }
   return (
     <div className='Container'>
     <br></br>
@@ -21,15 +36,15 @@ export default function Address() {
     <input type="text" id="state"></input>
     <br></br>
     <label className='pi'><b>Pincode:</b></label>
-    <input type="text" id="pincode"></input>
+    <input type="text" pattern="[0-9]+" maxlength='6' id="pincode" onChange={(e)=>{setPin(e.target.value)}}></input>
     <br></br>
     <br></br>
     <label className='cn'><b>Contact number:</b> </label>
-    <input  type="text" id="number" align="center"></input>
+    <input  type="text" id="number" maxlength='10' onChange={(e)=>{setph(e.target.value)}} align="center"></input>
     <br></br>
     <br></br>
     <br></br>
-    <Link to ='/payment' ><button id='br'>Procced to pay</button></Link>
+    <button id='br' onClick={val}>Procced to pay</button>
     </div>
   )
 }

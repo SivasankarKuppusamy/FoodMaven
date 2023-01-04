@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './otp.css'
 import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 function OtpVerify() {
+  const [count,setCount]=useState(0);
   const navigate=useNavigate();
   let navHome=()=>{
+    if(count==4){
     navigate("/")
+  }
+    else 
+    {
+      alert("Enter 4 digit Otp");
+    }
 }
+
   return (
        <div class="containe">
         <div class="row">
@@ -19,10 +27,10 @@ function OtpVerify() {
         <form class="form-otp mb-4">
               <div class="form-group row">
                 <div class="input-code">
-                 <input type="text" maxlength="1"></input>
-                 <input type="text" maxlength="1"></input>
-                 <input type="text" maxlength="1"></input>
-                 <input type="text" maxlength="1"></input>
+                 <input type="text" onChange={(e)=>{setCount(count+1)}} size="1" maxlength="1"></input>
+                 <input type="text" onChange={(e)=>{setCount(count+1)}} size="1" maxlength="1"></input>
+                 <input type="text" onChange={(e)=>{setCount(count+1)}} size="1" maxlength="1"></input>
+                 <input type="text" onChange={(e)=>{setCount(count+1)}} size="1" maxlength="1"></input>
                 </div>
               </div>
             </form>

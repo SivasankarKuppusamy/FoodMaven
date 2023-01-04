@@ -5,7 +5,7 @@
 .bg{
     background-color: beige;
 }
-.fimgs{
+.gimgs{
     margin-left: 2.5%;
     display: flex;
     justify-content: space-between;
@@ -17,11 +17,11 @@ margin-left: 60%;
 .text{
     font-size:25px
 }
-.fimgstext{
+.gimgstext{
 margin-left: 30px;
     display: flex;
     justify-content: space-between;
-margin-right: 2%;
+margin-right: 10%;
     text-align:justify;
     margin-bottom: 2%;
 }
@@ -32,13 +32,13 @@ h4{
     color: rgba(0, 0, 0, 0.699);
 }
 
-.fimgs1{
+.gimgs1{
     margin-left: 2%;
     display: flex;
     justify-content: space-between;
     margin-right: 3%; 
 }
-.fimgs1text1{
+.gimgs1text1{
     margin-bottom: 2%;
     margin-left: 30px;
     display: flex;
@@ -46,13 +46,13 @@ h4{
     text-align:justify;
    
 }
-.fimgs2{
+.gimgs2{
     margin-left: 2%;
     display: flex;
     justify-content: space-between;
     margin-right: 3%; 
 }
-.fimgs2text2{
+.gimgs2text2{
     margin-left: 30px;
     display: flex;
     justify-content: space-between;

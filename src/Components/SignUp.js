@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from 'react'
 import './login.css'
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import { useNavigate } from "react-router-dom";
 function SignUp() {
     const navigate=useNavigate();
@@ -38,6 +39,15 @@ function SignUp() {
     navigate("/otp")
     }
 }
+const  showPwd=()=> {
+var x=document.getElementById("pwd");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
   return (
     <div class="containe">
     <div class="content">
@@ -61,9 +71,10 @@ function SignUp() {
             <div class="card-input-container password">
                 <input type="password" placeholder="Enter your password" id="password" onChange={(e)=>{setPwd(e.target.value)}} />
             </div>
+            <VisibilityIcon id="eye1" onClick={showPwd} />
             <label for="password">Confirm Password</label>
             <div class="card-input-container password">
-                <input type="password" placeholder="Re-Enter your password" id="password" onChange={(e)=>{setCpwd(e.target.value)}}  />
+                <input type="password" placeholder="Re-Enter your password" id="pwd" onChange={(e)=>{setCpwd(e.target.value)}}  />
             </div>
             <button onClick={handleSubmit} class="card-button">Get OTP</button>
            

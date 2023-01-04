@@ -2,11 +2,17 @@
     margin: 0%;
     padding: 0%;  
 }
+#back{
+    position: absolute;
+    top:80px;
+    left:12px;
+    height:35px;
+}
 .bg{
     background-color: beige;
 }
-.fimgs{
-    margin-left: 2.5%;
+.imgs{
+    margin-left: 3%;
     display: flex;
     justify-content: space-between;
     margin-right: 3%;  
@@ -17,8 +23,8 @@ margin-left: 60%;
 .text{
     font-size:25px
 }
-.fimgstext{
-margin-left: 30px;
+.imgstext{
+margin-left: 40px;
     display: flex;
     justify-content: space-between;
 margin-right: 2%;
@@ -31,14 +37,16 @@ h3{
 h4{
     color: rgba(0, 0, 0, 0.699);
 }
-
-.fimgs1{
+.bimg{
+    margin-inline: 20px;
+}
+.imgs1{
     margin-left: 2%;
     display: flex;
     justify-content: space-between;
     margin-right: 3%; 
 }
-.fimgs1text1{
+.imgs1text1{
     margin-bottom: 2%;
     margin-left: 30px;
     display: flex;
@@ -46,15 +54,19 @@ h4{
     text-align:justify;
    
 }
-.fimgs2{
+.imgs2{
     margin-left: 2%;
     display: flex;
     justify-content: space-between;
     margin-right: 3%; 
 }
-.fimgs2text2{
+.imgs2text2{
     margin-left: 30px;
     display: flex;
     justify-content: space-between;
     text-align:justify;
 }
+
+
+
+
